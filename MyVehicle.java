@@ -52,27 +52,27 @@ class EBicycle extends Vehicle{
                 	e.printStackTrace();
                 }
 			g.clearRect(0, 0, 600, 600);
-			 g.drawOval(50, 150, 50, 50);  //Left circle
-			 g.drawOval(70, 170, 10, 10);  // Small circle
+			 g.drawOval(50 + i, 150, 50, 50);  //Left circle
+			 g.drawOval(70+ i, 170, 10, 10);  // Small circle
 			 
-			 g.drawOval(160, 150, 50, 50); //Right circle
-			 g.drawOval(180, 170, 10, 10); // Small circle
+			 g.drawOval(160+ i, 150, 50, 50); //Right circle
+			 g.drawOval(180+ i, 170, 10, 10); // Small circle
 			 
-			 g.drawRect(90, 130, 20, 10); //rectangle
-			 g.drawLine(170, 115, 185, 175);//cycle handle to big Circle
-			 g.drawArc(140, 110, 30, 10, 260, 190); // ARC = g.drawArc 110 up and down ,70 width, 10 
+			 g.drawRect(90+ i, 130, 20, 10); //rectangle
+			 g.drawLine(170+ i, 115, 185, 175);//cycle handle to big Circle
+			 g.drawArc(140+ i, 110, 30, 10, 260, 190); // ARC = g.drawArc 110 up and down ,70 width, 10 
 			 
 			// Drawing the pedals
-		        g.drawOval(120, 170, 10, 10); // center pedal circle
-		        g.drawLine(125, 175, 115, 185); // left pedal
-		        g.drawLine(125, 175, 135, 185); // right pedal
+		        g.drawOval(120+ i, 170, 10, 10); // center pedal circle
+		        g.drawLine(125+ i, 175, 115, 185); // left pedal
+		        g.drawLine(125+ i, 175, 135, 185); // right pedal
 			
 		    //Left and Right side straight line
-		        g.drawLine(75, 175, 125, 175); // Horizontal Line____main body
-		        g.drawLine(125, 175, 175, 140);//Right line
-		        g.drawLine(100, 140, 175, 140); // upper frame
-		        g.drawLine(75, 175, 100, 140); // lower frame and also left side line
-		        g.drawLine(98, 139, 124, 173);//vertical 
+		        g.drawLine(75+ i, 175, 125, 175); // Horizontal Line____main body
+		        g.drawLine(125+ i, 175, 175, 140);//Right line
+		        g.drawLine(100+ i, 140, 175, 140); // upper frame
+		        g.drawLine(75+ i, 175, 100, 140); // lower frame and also left side line
+		        g.drawLine(98+ i, 139, 124, 173);//vertical 
 			}
 		}
 	@Override  
@@ -100,17 +100,18 @@ class Car extends Vehicle{
 			catch(InterruptedException e) {
 				e.printStackTrace();
 			}
-			g.clearRect(0, 0, 600, 600);
+			
 			// Draw car body 
-	        g.drawRect(100, 350, 300, 50); // Main body 
-	        g.drawRect(150, 300, 200, 50); // Top part of the car
+	        g.clearRect(0, 0, 600, 600);
+	        g.drawRect(100+ i, 350, 300, 50); // Main body 
+	        g.drawRect(150+ i, 300, 200, 50); // Top part of the car
 	        
 	        // Draw car details
-	        g.drawRect(220, 310, 60, 20);  
+	        g.drawRect(220+ i, 310, 60, 20);  
 	       
 	        // Draw car wheels
-	        g.drawOval(120, 400, 50, 50); // Left wheel 
-	        g.drawOval(330, 400, 50, 50); // Right wheel
+	        g.drawOval(120+ i, 400, 50, 50); // Left wheel 
+	        g.drawOval(330+ i, 400, 50, 50); // Right wheel
 	        
 		}
 	}
